@@ -1,0 +1,67 @@
+{% extends 'AcmeHelloBundle:Default:title.html.twig' %}
+
+{% block setTitle %}
+Chao Huang's main page
+{% endblock %}
+{% block maincontent %}
+	<div id="wrap">
+
+	<div id="bio">
+	    <div id="about">
+	      <div id="photo-bg"> <img src="{{asset('bundles/acmehello/images/chaoh.jpg')}}" alt="" width="180" height="220" /> </div>
+	      <h3>About Me</h3>
+	      <p>I am a Clemson student who has a strong backgournd in the field of healthcare and computer science especiall in data mining.Now I am studying computer science in Clemson University as a graduate stduent.</p>
+	      <h4>Status: <span>Second Year Graduate Stduent</span></h4>
+	    </div>
+    	<div id="contact-details">
+	      <h3>Contact Me</h3>
+	      <p>If you're interested in getting me to do some freelance/contract work for you please get in touch:</p>
+	      <h5>Phone: <span>864-643-9769</span></h5>
+	      <h5>Email: <span>chaoh@g.clemson.com</span></h5>
+	      <h5>github: <span>https://github.com/oliverhuangchao</span></h5>
+	    </div>
+  	</div>
+
+	<div class="line"></div>
+	
+	<div id="services"><h3>Eduation</h3>
+	    <div class="service first"> <img src="{{asset('public_img/arrow.png')}}" alt="" />
+			<h4>Clemson University, USA</h4>
+			<p><a href = "{{ path('university_entrance', {'university': 'Clemson University'})  }}"><img src="{{asset('bundles/acmehello/images/Clemson.jpg')}}" width =300 height = 200></a></p>
+	    </div>
+	    <div class="service"><img src="{{asset('public_img/arrow.png')}}" alt="" />
+			<h4>Southeast University, China</h4>
+			<p><a href = "{{ path('university_entrance', {'university': 'Southeast University'})  }}"><img src = "{{asset('bundles/acmehello/images/SEU.jpg')}}" width = 300 height = 200></p>
+		</div>
+  	</div>
+	
+	<div class="line"></div>
+
+  	<div id="featured-projects">
+		<h3>Projects</h3>
+		<div class="project"> <a href="#"><img src="{{asset('bundles/acmehello/images/jengo440x240.jpg')}}" alt="" /></a> </div>
+		<div class="project last"> <a href="#"><img src="{{asset('bundles/acmehello/images/soko440x240.jpg')}}" alt="" /></a> </div>
+		<div class="project"> <a href="#"><img src="{{asset('bundles/acmehello/images/sanda440x240.jpg')}}" alt="" /></a> </div>
+		<div class="project last"> <a href="#"><img src="{{asset('bundles/acmehello/images/kondo440x240.jpg')}}" alt="" /></a> </div>
+	</div>
+  	
+  
+  	<div class="line"></div>
+
+  	<div id="services"><h3>Leadership Experience</h3>
+	    <div class="service first"> <img src="{{asset('public_img/arrow.png')}}" alt="" />
+	      <h4>Business team ‘PROTECH’</h4>
+	      <p></p>
+	    </div>
+	    <div class="service"> <img src="{{asset('public_img/arrow.png')}}" alt="" />
+	      <h4>President in Student Union</h4>
+	      <p> president in Southeast University</p>
+	    </div>
+	    <div class="service"> <img src="{{asset('public_img/arrow.png')}}" alt="" />
+	      <h4>Club Initiator in Campus</h4>
+	      <p> My first club: "Speak as you please"</p>
+	    </div>
+	</div>
+</div>
+
+{% endblock %}

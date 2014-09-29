@@ -1,0 +1,7 @@
+acme_hello_homepage:
+    path:     /chaoh
+    defaults: { _controller: AcmeHelloBundle:Default:index }
+
+university_entrance:
+    path:     /education/{university}
+    defaults: {_controller: AcmeHelloBundle:Education:index}
